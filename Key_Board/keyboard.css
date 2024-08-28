@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    
+}
+body{
+    width: 75%;
+    height: 50%;
+    align-items: center;
+    background-color: wheat;
+    margin-top: 60px;
+    font-size: xx-large;
+    font-weight: 100%;
+    border: 5px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 10px rgb(46, 43, 43),-10px -10px 10px black;
+    
+}
+#firstone{
+    width: 5vw;
+    height: 3vw;
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px;
+    border: 10px;
+    font-size: x-small;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+#firstone:hover{
+     transform: scale(1.2);
+     background-size: 1000px;
+     color: aqua;
+     font-size: large;
+}
+#secondone{
+    width: 4.6vw;
+    height: 3vw;
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px;
+    border: 10px;
+    border-radius: 10px;
+    font-size: x-small;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}   
+#secondone:hover{
+     transform: scale(0.9);
+     background-size: 1000px;
+     color: aqua;
+     font-size: large;
+}
+#thirdone{
+    width: 4.6vw;
+    height: 3vw;
+    font-size: small;
+    margin-top: 10px;
+    box-shadow: 3px 3px 3px;
+    border: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    
+}
+#thirdone:hover{
+     transform: scale(1.15);
+     background-size: 1000px;
+     color: aqua;
+     font-size: large;
+    
+}
+#fourone{
+    width: 5vw;
+    height: 3vw;
+    margin-top: 10px;
+    font-size: x-small;
+    border: 10px;
+    box-shadow: 3px 3px 3px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    
+}
+h3{
+    font-size: 10px;
+    color: red;
+    transition: all 0.5s;
+}
+#fourone:hover{
+     transform: scale(1.15);
+     background-size: 1000px;
+     color: aqua;
+     font-size: large;
+}
+#fourone:hover > h3{
+    font-size: 11px;
+    font-size: large;
+}
+#fiveone{
+    width: 5.42vw;
+    height: 3vw;
+    margin-top: 10px;
+    border: 10px;
+    box-shadow: 3px 3px 3px;
+    font-size: x-small;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+    
+}
+#fiveone:hover{
+     transform: scale(1.15);
+     background-size: 1000px;
+     color: aqua;
+     font-size: large;
+
+}
+#sixone{
+    width: 4.2vw;
+    height: 3vw;
+    margin-top: 10px;
+    border: 10px;
+    font-size: x-small;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    
+}
+#sixone:hover{
+     transform: scale(1.15);
+     background-size: 1000px;
+     color: aqua;
+     font-size: large;
+}
+#sixon{
+    width: 19vw;
+    height: 3vw;
+    box-shadow: 3px 3px 3px;
+    font-size: small;
+    margin-top: 10px;
+    border: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    
+}
+#sixon:hover{
+     transform: scale(1.15);
+     background-size: 1000px;
+     color: aqua;
+     font-size: large;
+}
+@media screen and (max-width: 768px) {
+    body {
+        width: 75%;
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        width: 75%;
+        font-size: x-small; 
+    }
+}
