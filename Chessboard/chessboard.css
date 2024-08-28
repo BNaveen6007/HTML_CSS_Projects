@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    width: 49vw;
+    height:49vw;
+    background-color: rgb(172, 117, 45);
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+.box{
+    width: 6.125vw;
+    height: 6.125vw;
+    text-align: center;
+    font-size: 5vw;
+}
+.white{
+    background-color: white;
+}
