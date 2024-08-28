@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#box{
+    width: 40vw;
+    height: 20vw;
+    border: 3px solid black;
+    border-radius: 15px;
+    position: absolute;
+    
+}
+#first{
+    position: relative;
+    width: 100%;
+   
+    /* background-color: antiquewhite;  */
+}
+#shut{
+    font-size: 1.5vw;
+    width: 100%;
+    
+    
+    margin-left: 10px;
+}
+#windows{
+    font-size: 4vw;
+    margin-left: 20%;
+    padding-top: 3%;
+
+}
+#second{
+    width: 100%;
+    height: 22%;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+#what{
+    margin-left: 19%;
+    font-size: 1vw;
+    width: 100vw;
+    padding-top: 2%;
+}
+#select{
+    margin-left: 19%;
+    padding:2px; 
+    margin-top: 1.5%;   
+    width: 28vw;
+    border-radius: 5px;
+}
+#third{
+    width: 100%;
+    height: 30%;
+    /* background-color: azure; */
+    position: relative;
+}
+#Closes{
+    width: 100vw;
+    margin-left: 20%;
+    margin-top: 3.5%;
+    font-size: 1vw;  
+
+}
+#ok{
+    margin-left: 65%;
+    margin-top: 5%;
+    width: 3vw;
+    font-size: 1vw;
+    background-image: linear-gradient(75deg,aqua,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent);
+    background-size: 10px;
+    transition: background-size 2s;
+    border-radius: 5px;
+}
+#ok:hover{
+    background-size: 1000px;
+}
+#cancel{
+    margin-left: 2%;
+    width: 10%;
+    font-size: 1vw;
+    background-image: linear-gradient(75deg,aqua,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent);
+    background-size: 10px;
+    transition: background-size 2s;
+    border-radius: 5px;
+}
+#cancel:hover{
+    background-size: 1000px;
+}
+#help{
+    margin-left: 2%;
+    width: 9%;
+    font-size: 1vw;
+    background-image: linear-gradient(75deg,aqua,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent);
+    background-size: 10px;
+    transition: background-size 2s;
+    border-radius: 5px;
+}
+#help:hover{
+        background-size: 1000px;
+    }
+    #down{
+        color: aquamarine;
+        
+    }
+    @media screen and (max-width: 768px) {
+        body {
+            width: 100%;
+            font-size: x-small;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        body {
+            width: 100%;
+            font-size:medium; 
+        }
+    }
