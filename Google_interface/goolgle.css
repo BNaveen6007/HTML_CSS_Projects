@@ -1,0 +1,74 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+body{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#boxs{
+    width: 100vw;
+    height: 5vh;
+    background-color: 1px solid black;
+    margin-bottom: 20%;
+    
+   
+}
+#setting{
+    margin-left: 70%;
+    font-size: 2vw;
+    
+}
+#sign{
+
+    background-image: linear-gradient(75deg,rgb(0, 195, 255),transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent,transparent);
+    background-size: 10px;
+    transition: background-size 2s;
+    border-radius: 5px;
+}
+#sign:hover{
+    background-size: 1000px;
+}
+#second{
+    width: 100vw;
+    margin-top: 1%;
+    font-size: 4vw;
+   
+}
+#google{
+    width: 100vw;
+    padding-top: 10%;
+}
+#box{
+    width: 45vw;
+    height: 60%;
+    border-radius: 10px;
+
+}
+#third{
+    margin-left: 42vw;
+    font-size: 1vw;
+    padding-top: 1%;
+}
+#search{
+   
+    font-size: 1vw;
+}
+#lucky{
+    font-size: 1vw;
+}
+#celebrate{
+    margin-left: 43%;
+    margin-top: 1%;
+    font-size: 1vw;
+}
+#offered{
+    margin-left: 30%;
+    margin-top: 1%;
+    font-size: 1vw;
+}
