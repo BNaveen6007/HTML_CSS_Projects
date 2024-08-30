@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(132, 123, 123);
+}
+.box{
+    position: relative;
+    justify-content: center;
+    width: 370px;
+    height: 430px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px 5px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 430px;
+    background: linear-gradient(60deg,transparent,rgba(246, 247, 248, 0),rgb(0, 183, 255));
+    transform-origin: bottom right;
+    animation: any 6s linear infinite;
+
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 430px;
+    background: linear-gradient(60deg,transparent,rgba(241, 241, 241, 0),rgb(255, 1, 221));
+    transform-origin: bottom right;
+    animation: any 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes any{
+    0%{
+     transform: rotate(0deg);   
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+form{
+    position: absolute;
+    inset: 5px;
+    border-radius: 50px 5px;
+    background-color: black;
+    z-index: 10;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: rgb(199, 131, 131);
+    text-align: center;
+    padding: 10px;
+}
+input{
+    width: 300px;
+    height: 35px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: small;
+    background: black transparent;
+}
+input:hover{
+    font-size: medium;
+    text-align: center;
+    font-weight: bolder;
+    background: none;    
+    color: white;
+}
+hr{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+button{
+    margin-top: 10px;
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: medium;
+}
+button:hover{
+    font-size: larger;
+    font-weight: bold;
+    color: cornflowerblue;
+    background-color: antiquewhite;
+}
+p{
+    color:white;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#sign{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#sign:hover{
+    color: pink;
+}
+#Register{
+    color: white;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+#Register:hover{
+    color: skyblue;
+}
+   </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <h1>VCube Login Page</h1>
+            <input type="email" placeholder="  Enter Email Address" required>
+            <input type="password" placeholder="    Enter the Password" required>
+            <hr>
+            <button>Login</button>
+            <p>Don't have an Account ?</p>
+            <a id="sign" href="">Sign up : For Students</a><br><br>
+            <a id="Register" href="">Register: For Lab Coordinators</a>
+          
+            
+
+        </form>
+    </div>
+</body>
+</html>

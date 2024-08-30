@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../bootstrarp/bootstrap.css">
+    <style>
+        body {
+            background-image: url('../project/pics/second.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .transparent-card {
+            background-color: rgba(221, 209, 209, 0.5); 
+            border: none; 
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center login-container">
+          <div class="col-lg-5">
+            <div class="card transparent-card">
+                <div class="card-header text-center">Welcome to Vcube </div>
+              <div class="text-center mt-2 text-primary"><b>Login Page</b></div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group ">
+                    <label>Email</label>
+                    <input type="email" class="form-control text-active" id="email" placeholder="Enter Email Address">
+                  </div>
+                  <div class="form-group mt-3">
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  <div class="d-grid">
+                    <button class=" btn btn-primary  mt-3" type="submit">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
