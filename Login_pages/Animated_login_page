@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: grey;
+        }
+    section{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 55px;
+}
+section span{
+    position: relative;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(254, 254, 254);
+    z-index: 2;
+    animation: name;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes name{
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(800px);
+    }
+    50%{
+        transform: translatex(500px);
+    }
+    75%{
+        transform: rotatex(360deg);
+    }
+    100%{
+        transform: scale(360);
+    }
+
+}
+#q{
+    animation-name: second;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: -3s;
+}
+@keyframes second{
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-800px);
+    }
+    50%{
+        transform: translateY(800px);
+
+    }
+   
+}
+
+.box{
+    position: relative;
+    justify-content: center;
+    width: 370px;
+    height: 450px;
+    background-color: black;
+    border-radius: 50px 5px;
+    overflow: hidden;
+
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg,transparent,rgb(3, 121, 248),rgb(255, 255, 255));
+    transform-origin: bottom right;
+    animation: any 10s linear infinite;
+    
+
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg,transparent,rgb(255, 255, 255),rgb(255, 0, 221));
+    transform-origin: bottom right;
+    animation: any 10s linear infinite;
+    animation-delay: -8s;
+}
+
+@keyframes any{
+    0%{
+     transform: rotate(-360deg); 
+    }
+    25%{
+        transform: rotate(70px);   
+    }
+    75%{
+        transform: rotate(360deg);   
+
+    }
+    100%{
+        transform: rotate(-70deg);
+    }
+}
+form{
+    position: absolute;
+    inset: 5px;
+    border-radius: 50px 5px;
+    background-color: black;
+    z-index: 10;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+h1{
+    color: rgb(148, 178, 210);
+    text-align: center;
+    padding: 10px;
+}
+input{
+    width: 300px;
+    height: 35px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: small;
+    background: black transparent;
+}
+input:hover{
+    font-size: medium;
+    text-align: center;
+    font-weight: bolder;
+    background: none;    
+    color: white;
+}
+hr{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+h3{
+    position: absolute;
+    width: 160px;
+    height: 10px;
+    color: white;
+    margin-top: 230px;
+    margin-left: 90px;
+}
+h3:hover{
+    font-size: large;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(68, 126, 232);
+}
+button{
+    margin-top: 50px;
+    width: 300px;
+    height: 35px;
+    gap: 10px;
+    border-radius: 10px;
+    font-size: medium;
+}
+button:hover{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(0, 89, 255);
+    background-color: rgb(146, 143, 139);
+
+}
+    </style>
+</head>
+<body>
+    <section>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+        <span id="q"></span>
+        <span></span>
+    </section>
+    <div class="box">
+        <form action="">
+            <h1>Login Page</h1>
+            <input type="email" placeholder="  Enter Email Address" required>
+            <input type="password" placeholder="    Enter the Password" required>
+            <hr>
+            <h3>Forgot Password ?</h3>
+            <button>Login</button> 
+            <button>Create Account</button>
+        </form>
+        
+
+    </div>
+</body>
+</html>
